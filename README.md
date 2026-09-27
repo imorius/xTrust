@@ -79,8 +79,12 @@ flowchart TD
 |-------------|-------------------|
 | **Java** | OpenJDK 25+ |
 | **Server Platform** | Paper / Folia (Minecraft 1.20+ / API 26.2+) |
-| **Operating System** | Linux (amd64 / x86_64) recommended *(standard for Minecraft servers, Docker, and Pterodactyl)* |
+| **Operating System** | Linux (amd64 / x86_64) *(VPS or Dedicated Server with root / TUN access)* |
 | **NetBird Account** | [NetBird Cloud](https://app.netbird.io/) or self-hosted NetBird management server |
+
+> [!WARNING]
+> **Pterodactyl Panel / Shared Hosting Incompatibility:**
+> xTrust does **not** work on standard game server hosting running inside Pterodactyl Panel. NetBird requires root privileges (`CAP_NET_ADMIN`) and access to `/dev/net/tun` to manage WireGuard network interfaces, which are restricted in Pterodactyl Docker containers. A VPS or Dedicated Server with full root access is required.
 
 ---
 

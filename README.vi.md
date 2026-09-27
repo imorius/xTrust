@@ -78,8 +78,12 @@ flowchart TD
 |------------|---------|
 | **Java** | OpenJDK 25+ |
 | **Server Platform** | Paper / Folia (Minecraft 1.20+ / API 26.2+) |
-| **Hệ điều hành** | Linux (amd64 / x86_64) *(môi trường tiêu chuẩn của các VPS, máy chủ máy ảo, Docker, Pterodactyl)* |
+| **Hệ điều hành** | Linux (amd64 / x86_64) *(VPS hoặc Dedicated Server có quyền root / thiết bị TUN)* |
 | **Tài khoản NetBird** | [NetBird Cloud](https://app.netbird.io/) hoặc máy chủ NetBird tự host (Self-hosted) |
+
+> [!WARNING]
+> **Không tương thích với Pterodactyl Panel / Shared Hosting:**
+> xTrust **không thể hoạt động** trên các dịch vụ hosting Minecraft chia sẻ sử dụng Pterodactyl Panel. NetBird yêu cầu quyền root hệ thống (`CAP_NET_ADMIN`) và quyền truy cập vào `/dev/net/tun` để tạo giao diện mạng WireGuard — những quyền này bị hạn chế trong các container Docker tiêu chuẩn của Pterodactyl. Bạn cần sử dụng VPS hoặc Dedicated Server có toàn quyền quản trị.
 
 ---
 
