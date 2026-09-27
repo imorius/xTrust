@@ -212,6 +212,12 @@ To avoid dependency clashes, the following libraries are shaded and relocated:
 
 ---
 
+## 💡 Acknowledgements
+
+This project was inspired by [CloudflareTunnelsPlugin](https://hangar.papermc.io/IvyCollective/CloudflareTunnelsPlugin).
+
+---
+
 ## 👤 Author
 
 - **_Orius** - Developer

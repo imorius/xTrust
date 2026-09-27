@@ -199,6 +199,12 @@ build/libs/xTrust-1.0-all.jar
 
 ---
 
+## 💡 Lời cảm ơn & Nguồn cảm hứng (Acknowledgements)
+
+Dự án này được lấy ý tưởng từ [CloudflareTunnelsPlugin](https://hangar.papermc.io/IvyCollective/CloudflareTunnelsPlugin).
+
+---
+
 ## 👤 Tác giả
 
 - **_Orius** - Developer
