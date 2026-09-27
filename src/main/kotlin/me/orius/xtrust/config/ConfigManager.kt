@@ -17,10 +17,8 @@ class ConfigManager(private val plugin: XTrust) {
         lateinit var instance: ConfigManager
             private set
 
-        fun <T : Any> getConfig(clazz: Class<T>): T = instance.getConfig(clazz)
         inline fun <reified T : Any> getConfig(): T = instance.getConfig(T::class.java)
 
-        fun <T : Any> saveConfig(clazz: Class<T>) = instance.saveConfig(clazz)
         inline fun <reified T : Any> saveConfig() = instance.saveConfig(T::class.java)
     }
 

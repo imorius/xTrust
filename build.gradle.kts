@@ -21,6 +21,7 @@ dependencies {
     implementation("org.apache.commons:commons-compress:1.27.1")
     implementation("dev.jorel:commandapi-paper-shade:12.0.0")
     implementation("dev.jorel:commandapi-kotlin-paper:12.0.0")
+    implementation("org.bstats:bstats-bukkit:3.1.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -43,6 +44,7 @@ tasks {
         relocate("com.tcoded.folialib", "me.orius.xtrust.lib.folialib")
         relocate("org.apache.commons.compress", "me.orius.xtrust.lib.commons.compress")
         relocate("dev.jorel.commandapi", "me.orius.xtrust.lib.commandapi")
+        relocate("org.bstats", "me.orius.xtrust.lib.bstats")
     }
 
     runServer { // Configure the Minecraft version for our task.

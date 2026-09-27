@@ -11,12 +11,14 @@ class NetbirdConfig {
     var restart: Restart = Restart()
 }
 
+@Configuration
 class Download {
     var url: String = "https://github.com/netbirdio/netbird/releases/download/v{VERSION}/netbird_{VERSION}_linux_amd64.tar.gz"
     var version: String = "0.79.0"
     var cacheDir: String = ".cache/xtrust/netbird"
 }
 
+@Configuration
 class Restart {
     var autoRestart: Boolean = true
     var restartAfter: Int = 30
