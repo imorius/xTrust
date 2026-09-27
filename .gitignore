@@ -1,0 +1,59 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradletasknamecache
+
+# Kotlin compiler & daemon cache
+.kotlin/
+
+# Netbird & Local caches
+.cache/
+
+# IDEs
+## IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+## VS Code & Other Editors
+.vscode/
+*.code-workspace
+
+# Runtime / Test server
+run/
+logs/
+*.log
+
+# JVM Crash Logs & Memory Dumps
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# Environment & Secrets
+.env
+*.env
+*.local
+
+# OS Specific
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Codegraph
+.codegraph/

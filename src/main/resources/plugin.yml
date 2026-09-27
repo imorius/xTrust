@@ -1,0 +1,27 @@
+name: xTrust
+version: '${version}'
+description: 'Seamless Zero-Trust Mesh Networking for Paper & Folia Minecraft Servers via NetBird'
+
+main: me.orius.xtrust.XTrust
+api-version: '26.2'
+load: STARTUP
+
+authors: [ _Orius ]
+
+commands:
+  xtrust:
+    description: 'Main command for xTrust'
+    aliases: [xt]
+    usage: '/<command> [reload [config|netbird|all]]'
+    permission: xtrust.admin
+    permission-message: '<red>You do not have permission to execute this command.</red>'
+
+permissions:
+  xtrust.admin:
+    description: 'Gives full access to all xTrust commands'
+    default: op
+    children:
+      xtrust.command.reload: true
+  xtrust.command.reload:
+    description: 'Allows reloading xTrust configurations and NetBird daemon'
+    default: op
